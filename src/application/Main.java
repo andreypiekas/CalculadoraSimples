@@ -70,7 +70,6 @@ public class Main {
                     break;
 
                 case 2:
-
                     System.out.println("Insira o primeiro valor: \n");
                     x.num1 = sc.nextDouble();
                     System.out.println("\n");
@@ -79,7 +78,6 @@ public class Main {
                     System.out.println("O resultado de " + x.num1 + " - " + x.num2 + " = " + Calculos.subtracaoCalc(x.num1, x.num2));
                     break;
                 case 3:
-
                     System.out.println("Insira o primeiro valor: \n");
                     x.num1 = sc.nextDouble();
                     System.out.println("\n");
@@ -88,7 +86,6 @@ public class Main {
                     System.out.println("O resultado de " + x.num1 + " * " + x.num2 + " = " + Calculos.multiplicacaoCalc(x.num1, x.num2));
                     break;
                 case 4:
-
                     System.out.println("Insira o primeiro valor: \n");
                     x.num1 = sc.nextDouble();
                     System.out.println("\n");
@@ -97,7 +94,6 @@ public class Main {
                     System.out.println("O resultado de " + x.num1 + " / " + x.num2 + " = " + Calculos.divisaoCalc(x.num1, x.num2));
                     break;
                 case 5:
-
                     System.out.println("Insira o primeiro valor: \n");
                     x.num1 = sc.nextDouble();
                     System.out.println("\n");
