@@ -16,9 +16,11 @@ public class Main {
         System.out.flush();
     }
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) throws IOException {
 
         Locale.setDefault(Locale.US);
+        @SuppressWarnings("UnusedAssignment")
         int escolha = 0;
         Scanner sc = new Scanner(System.in);
         Calculos x, y, resultado;
@@ -53,30 +55,59 @@ public class Main {
                 case 0:
                     System.out.println("Aplicação Finalizada");
                     System.exit(0);
-                default:
+
+            }
+
+            switch (escolha) {
+                case 1:
                     System.out.println("Insira o primeiro valor: \n");
                     x.num1 = sc.nextDouble();
                     System.out.println("\n");
                     System.out.println("Insira o segundo valor: \n");
                     x.num2 = sc.nextDouble();
-                    break;
-            }
-
-            switch (escolha) {
-                case 1 ->
                     System.out.println("O resultado de " + x.num1 + " + " + x.num2 + " = " + Calculos.somaCalc(x.num1, x.num2));
-                case 2 ->
+
+                    break;
+
+                case 2:
+
+                    System.out.println("Insira o primeiro valor: \n");
+                    x.num1 = sc.nextDouble();
+                    System.out.println("\n");
+                    System.out.println("Insira o segundo valor: \n");
+                    x.num2 = sc.nextDouble();
                     System.out.println("O resultado de " + x.num1 + " - " + x.num2 + " = " + Calculos.subtracaoCalc(x.num1, x.num2));
-                case 3 ->
+                    break;
+                case 3:
+
+                    System.out.println("Insira o primeiro valor: \n");
+                    x.num1 = sc.nextDouble();
+                    System.out.println("\n");
+                    System.out.println("Insira o segundo valor: \n");
+                    x.num2 = sc.nextDouble();
                     System.out.println("O resultado de " + x.num1 + " * " + x.num2 + " = " + Calculos.multiplicacaoCalc(x.num1, x.num2));
-                case 4 ->
+                    break;
+                case 4:
+
+                    System.out.println("Insira o primeiro valor: \n");
+                    x.num1 = sc.nextDouble();
+                    System.out.println("\n");
+                    System.out.println("Insira o segundo valor: \n");
+                    x.num2 = sc.nextDouble();
                     System.out.println("O resultado de " + x.num1 + " / " + x.num2 + " = " + Calculos.divisaoCalc(x.num1, x.num2));
-                case 5 ->
+                    break;
+                case 5:
+
+                    System.out.println("Insira o primeiro valor: \n");
+                    x.num1 = sc.nextDouble();
+                    System.out.println("\n");
                     System.out.println("O resultado do quadrado de " + x.num1 + " = " + Calculos.quadradoCalc(x.num1));
+                    break;
+                default:
+                    System.out.println("opção Inválida, selecione uma opção entra 1 e 5: \n");
 
             }
             System.in.read();
-            // System.out.print("\033\143");
             clearScreen();
         } while (escolha != 0);
         clearScreen();
