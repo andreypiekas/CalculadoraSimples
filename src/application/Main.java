@@ -27,7 +27,6 @@ public class Main {
         x = new Calculos();
         y = new Calculos();
         resultado = new Calculos();
-
         System.out.println("Bem vindo! \n");
         System.out.println("Calculadora \n");
         System.out.println("Andrey Gheno Piekas \n");
@@ -66,9 +65,7 @@ public class Main {
                     System.out.println("Insira o segundo valor: \n");
                     x.num2 = sc.nextDouble();
                     System.out.println("O resultado de " + x.num1 + " + " + x.num2 + " = " + Calculos.somaCalc(x.num1, x.num2));
-
                     break;
-
                 case 2:
                     System.out.println("Insira o primeiro valor: \n");
                     x.num1 = sc.nextDouble();
@@ -100,7 +97,7 @@ public class Main {
                     System.out.println("O resultado do quadrado de " + x.num1 + " = " + Calculos.quadradoCalc(x.num1));
                     break;
                 default:
-                    System.out.println("opção Inválida, selecione uma opção entra 1 e 5: \n");
+                    System.out.println("Opção Inválida, selecione uma opção entra 1 e 5: \n");
 
             }
             System.in.read();
